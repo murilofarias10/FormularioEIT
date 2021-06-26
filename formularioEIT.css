@@ -1,0 +1,63 @@
+/* 
+Outros tipos:
+    background-color:;
+    background-image: url("capa.jpg");
+    border: solid, dotted, dashed
+    font-size: 5px;
+    font-style: italic, Arial;
+    color: red;
+    text-align: justify, left, right, center;
+    letter-spacing: 0.5em pix pt;
+    text-indent: 30pt > para paragrafos
+    text-decoration: underline, overline, line-through, blink;
+
+
+
+    relativo % em ex px
+    absoluto in cm mm pt pc
+*/
+
+body {
+    background: #ccc;
+    margin: auto;
+}
+
+.titulo {
+    color: black;
+    margin: 10px;
+    background-position: top;
+    font-weight: bold;
+}
+
+.subtitulo {
+    margin: 15px 10px 15px 10px;
+    font-weight: bold;
+}
+
+#principal {
+    margin: auto;
+    padding: 0mm;
+    content: 10px;
+    border: 3px dotted rgb(0, 0, 0);
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.imagemA {
+    border-radius: 50px;
+    margin: auto;
+    padding: 0mm;
+}
+
+.botoes {
+    font-weight: bold;
+}
+
+a:hover {
+    color: blue;
+}
+
+.listaPagInfo {
+    list-style-image: url(iconecheck.png);
+    list-style-position: inside;
+}

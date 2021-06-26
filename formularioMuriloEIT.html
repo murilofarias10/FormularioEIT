@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang='pt-BR'>
+
+<head>
+
+    <meta charset='utf-8'>
+    <img src="capa.jpg" alt="capa de topo" width="350px" Height="150px" class="imagemA">
+    <title>Tela de Cadastroo</title>
+    <link rel="Stylesheet" href="formularioEIT.css">
+
+</head>
+
+<body>
+
+    <h1 class="titulo"> Gerar Nova Atividade</h1>
+
+    <h4 class="subtitulo"> Eletrica, Instrumentação ou Rede de dados</h4>
+    <!-- Regexpal para expressao regular
+        [0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}
+        000.111.222-33
+        CPF: <input type="text" name="cpf" placeholder="Digite seu CPF" pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}">
+
+        <br> Disciplina: <input type="text" name="disciplina" placeholder="Digite disciplina" required>
+        <br> Atividade: <input type="text" name="atividade" placeholder="Digite atividade" required>
+    -->
+    <form action="#" method="post" enctype="multipart/form-data" id="principal">
+
+        <fieldset>
+            <legend>Nº da atividade (automático)</legend>
+            Id: <input type="text" name="id" disabled value="0001"><br><br>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Dados do programador</legend>
+            Usuário: <input type="text" name="usuario" placeholder="Digite seu usuário" required> Senha: <input type="password" name="senha" placeholder="Digite sua senha" required>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Selecione a Disicplina</legend>
+            <label for="disciplinaEL">Elétrica</label>
+            <input type="radio" name="escolhadisciplina" id="disciplinaEL" value="Eletrica" required><br>
+
+            <label for="disciplinaIN">Instrumentação</label>
+            <input type="radio" name="escolhadisciplina" id="disciplinaIN" value="Instrumentacao" required><br>
+
+            <label for="disciplinaDados">Rede de Dados</label>
+            <input type="radio" name="escolhadisciplina" id="disciplinaDados" value="Dados" required><br>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Selecione a Atividade</legend>
+            <input type="checkbox" name="LanceCabos" value="1">Lançamento de Cabos
+            <input type="checkbox" name="InfraLeitos" value="1">Montagem de Leitos
+            <input type="checkbox" name="InfraEletrodutos" value="1">Montagem de Eletrodutos
+            <input type="checkbox" name="Eqp" value="1">Montagem de Equipamentos
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+
+            <legend>Informações</legend>
+            <legend>Selecione a area</legend>
+            <select name="area">
+                <option value="305">305</option>
+                <option value="310">310</option>       
+                <option value="320">320</option>
+                <option value="330">330</option>
+                <option value="340">340</option>
+                <option value="360">360</option>
+                <option value="365">365</option>
+            </select>
+            <br>
+            <br>
+            <legend>Selecione a data de inicio</legend>
+            <input type="date" name="datainicio">
+            <br>
+            <br>
+            <legend>Selecione a planta</legend>
+            <input list="plantas" name="plantas">
+            <datalist id="plantas">
+                    <option value="113-70-305-PL-001">
+                    <option value="113-70-310-PL-006">
+                    <option value="113-70-320-PL-008">
+                    <option value="113-70-340-PL-010">
+                </datalist>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Carregue a foto</legend>
+            <!-- precisa adicionar na declaração inicial do formulario enctype="multipart/form-data"> -->
+            <input type="file" name="arquivofoto">
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Outras informações</legend>
+
+            <br> Obs: <textarea name="obs" placeholder="Digite descrição da atividade" required cols="50" rows="2"></textarea>
+        </fieldset>
+
+        <br>
+        <br>
+
+        <button type="submit" class="botoes">Criar Nova Atividade</button>
+        <button type="reset" class="botoes">Limpar</button>
+
+        <br>
+        <br>
+
+    </form>
+
+    <!--
+    <footer>
+        <p>Desenvolvedor:</p>
+        <a href="https://www.linkedin.com/in/murilo-farias-071293108/" target="_blank">Linkedin</a><br>
+    </footer>
+-->
+</body>
+<html>
